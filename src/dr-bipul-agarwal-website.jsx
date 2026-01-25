@@ -37,22 +37,22 @@ export default function DoctorWebsite() {
   const services = [
     {
       title: "Kidney Stone Treatment",
-      description: "Advanced minimally invasive procedures for kidney stone removal including PCNL, RIRS, and laser lithotripsy with quick recovery times.",
+      description: "Advanced minimally invasive procedures for kidney stone removal including PCNL, RIRS, URS and laser lithotripsy with quick recovery times.",
       icon: "💎"
     },
     {
       title: "Prostate Surgery",
-      description: "Comprehensive prostate care including TURP, laser prostatectomy, and treatment for benign prostatic hyperplasia (BPH).",
+      description: "Comprehensive prostate care including TURP, laser prostatectomy, UroLift and treatment for benign prostatic hyperplasia (BPH).",
       icon: "🔬"
     },
     {
       title: "Urological Cancer Care",
-      description: "Expert diagnosis and surgical treatment for kidney, bladder, prostate, and testicular cancers using latest oncological techniques.",
+      description: "Expert diagnosis and surgical treatment for kidney, adrenal, bladder, prostate, penis and testicular cancers using latest oncological techniques.",
       icon: "🎗️"
     },
     {
       title: "Male Infertility",
-      description: "Specialized treatment for male reproductive issues including varicocele repair, vasectomy reversal, and fertility consultations.",
+      description: "Specialized treatment for male reproductive issues including varicocele repair, vasectomy reversal, erectile dysfunction and fertility consultations.",
       icon: "👨‍⚕️"
     },
     {
@@ -60,10 +60,16 @@ export default function DoctorWebsite() {
       description: "Minimally invasive laparoscopic and robotic-assisted procedures for faster recovery and minimal scarring.",
       icon: "🏥"
     },
+    // {
+    //   title: "Urinary Tract Infections",
+    //   description: "Comprehensive diagnosis and treatment of recurrent UTIs, bladder infections, and urological inflammatory conditions.",
+    //   icon: "💊"
+    // },
+
     {
-      title: "Urinary Tract Infections",
-      description: "Comprehensive diagnosis and treatment of recurrent UTIs, bladder infections, and urological inflammatory conditions.",
-      icon: "💊"
+      title: "Renal Transplant",
+      description: "Expert renal transplant services including pre-transplant evaluation, organ procurement, and post-transplant care.",
+      icon: "🩺"
     }
   ];
 
@@ -86,8 +92,8 @@ export default function DoctorWebsite() {
   ];
 
   const stats = [
-    { number: "15+", label: "Years Experience" },
-    { number: "8,000+", label: "Surgeries Performed" },
+    { number: "6+", label: "Years Experience" },
+    { number: "5,000+", label: "Surgeries Performed" },
     { number: "99%", label: "Success Rate" },
     { number: "24/7", label: "Emergency Care" }
   ];
@@ -1005,7 +1011,7 @@ export default function DoctorWebsite() {
           }
           
           .hero {
-            padding-top: 6rem;
+            padding-top: 15rem;
           }
           
           .hero-title {
@@ -1083,7 +1089,7 @@ export default function DoctorWebsite() {
         <div className="nav-container">
           <div className="logo">
             Dr. Bipul Agarwal
-            <span className="logo-subtitle">Urologist & Surgeon</span>
+            <span className="logo-subtitle">Urologist, Renal Transplant & Robotic Surgeon</span>
           </div>
           <ul className="nav-links">
             <li><a href="#home" className={activeSection === 'home' ? 'active' : ''} onClick={(e) => { e.preventDefault(); scrollToSection('home'); }}>Home</a></li>
@@ -1103,7 +1109,7 @@ export default function DoctorWebsite() {
         <div className="mobile-menu-header">
           <div className="logo">
             Dr. Bipul Agarwal
-            <span className="logo-subtitle">Urologist & Surgeon</span>
+            <span className="logo-subtitle">Urologist, Renal Transplant & Robotic Surgeon</span>
           </div>
           <button className="menu-toggle" onClick={() => setIsMenuOpen(false)}>
             <X size={28} />
@@ -1125,7 +1131,7 @@ export default function DoctorWebsite() {
             <div className="hero-subtitle">Expert Urological Care</div>
             <h1 className="hero-title">Advanced Surgical Solutions</h1>
             <p className="hero-description">
-              Specialized urologist and surgeon offering comprehensive treatment for kidney stones, prostate conditions, urological cancers, and minimally invasive procedures with over 15 years of excellence.
+              Specialized urologist and renal transplant surgeon offering comprehensive treatment for kidney, ureter & bladder stones, prostate conditions, urological cancers, male infertility, robotic and reconstructive procedures with over 6 years of excellence.
             </p>
             <div className="hero-buttons">
               <button className="btn btn-primary" onClick={() => scrollToSection('contact')}>
@@ -1161,7 +1167,7 @@ export default function DoctorWebsite() {
                 <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=800&h=1000&fit=crop" alt="Dr. Bipul Agarwal" />
               </div>
               <div className="about-image-badge">
-                <span className="badge-number">8K+</span>
+                <span className="badge-number">5K+</span>
                 <span className="badge-text">Successful Surgeries</span>
               </div>
             </div>
@@ -1169,23 +1175,23 @@ export default function DoctorWebsite() {
               <div className="section-subtitle">About the Specialist</div>
               <h3>Dr. Bipul Agarwal</h3>
               <p>
-                With over 15 years of specialized experience in urology and surgical care, Dr. Bipul Agarwal has established himself as a leading expert in minimally invasive urological procedures. His expertise spans across kidney stone management, prostate surgery, urological oncology, and reconstructive urology.
+                With over 6 years of specialized experience in urology and surgical care, Dr. Bipul Agarwal has established himself as a leading expert in minimally invasive urological procedures. His expertise spans across kidney, ureter & bladder stones, prostate conditions, urological cancers, male infertility, robotic and reconstructive procedures
               </p>
               <p>
-                Dr. Agarwal is committed to providing patient-centered care using the latest surgical techniques and technology. His approach combines clinical excellence with compassionate care, ensuring optimal outcomes for every patient. He has successfully performed over 8,000 surgeries with an exceptional success rate.
+                Dr. Agarwal is committed to providing patient-centered care using the latest surgical techniques and technology. His approach combines clinical excellence with compassionate care, ensuring optimal outcomes for every patient. He has successfully performed over 5,000 surgeries with an exceptional success rate.
               </p>
               <div className="credentials">
                 <div className="credential-item">
                   <div className="credential-icon"><Award size={24} /></div>
                   <div className="credential-text">
-                    <h4>MCh in Urology</h4>
+                    <h4>DrNB in Urology</h4>
                     <p>Advanced Surgical Training</p>
                   </div>
                 </div>
                 <div className="credential-item">
                   <div className="credential-icon"><Users size={24} /></div>
                   <div className="credential-text">
-                    <h4>8,000+ Surgeries</h4>
+                    <h4>5,000+ Surgeries</h4>
                     <p>Proven Track Record</p>
                   </div>
                 </div>
@@ -1276,7 +1282,7 @@ export default function DoctorWebsite() {
                 <div className="contact-icon"><Phone size={24} /></div>
                 <div className="contact-details">
                   <h4>Phone</h4>
-                  <p>+91 98765 43210</p>
+                  <p>+919886206897</p>
                   <p>Available: Mon - Sat, 9:00 AM - 7:00 PM</p>
                 </div>
               </div>
@@ -1284,7 +1290,7 @@ export default function DoctorWebsite() {
                 <div className="contact-icon"><Mail size={24} /></div>
                 <div className="contact-details">
                   <h4>Email</h4>
-                  <p>dr.bipulagarwal@clinic.com</p>
+                  <p>bipul17@gmail.com</p>
                   <p>Response within 24 hours</p>
                 </div>
               </div>
@@ -1292,8 +1298,8 @@ export default function DoctorWebsite() {
                 <div className="contact-icon"><MapPin size={24} /></div>
                 <div className="contact-details">
                   <h4>Clinic Address</h4>
-                  <p>123 Medical Plaza, Sector 15</p>
-                  <p>Faridabad, Haryana 121007</p>
+                  <p>Sir Ganga Ram Hospital Marg, Old Rajinder Nagar, New Delhi, 110060</p>
+                  <p>G32 Ground Floor, The Clinics, Market Road, Green Park Main, Block G, New Delhi, 110016</p>
                 </div>
               </div>
               <div className="contact-item">
@@ -1317,7 +1323,7 @@ export default function DoctorWebsite() {
                 </div>
                 <div className="form-group">
                   <label>Phone Number</label>
-                  <input type="tel" placeholder="+91 98765 43210" required />
+                  <input type="tel" placeholder="+919886206897" required />
                 </div>
                 <div className="form-group">
                   <label>Message</label>
@@ -1369,12 +1375,12 @@ export default function DoctorWebsite() {
               <li>Monday - Saturday: 9:00 AM - 7:00 PM</li>
               <li>Sunday: By Appointment</li>
               <li>Emergency: 24/7 Available</li>
-              <li>Phone: +91 98765 43210</li>
+              <li>Phone: +919886206897</li>
             </ul>
           </div>
         </div>
         <div className="footer-bottom">
-          <p>&copy; 2026 Dr. Bipul Agarwal - Urologist & Surgeon. All rights reserved.</p>
+          <p>&copy; 2026 Dr. Bipul Agarwal - Urologist, Renal Transplant & Robotic Surgeon. All rights reserved.</p>
         </div>
       </footer>
     </div>
