@@ -2,6 +2,12 @@ import React, { useState, useEffect } from 'react';
 import { Menu, X, Phone, Mail, MapPin, Clock, Award, Users, Heart, Star, ChevronRight, Calendar, Facebook, Twitter, Linkedin, Instagram } from 'lucide-react';
 import Picture1 from "./pic1.jpg";
 import Picture2 from "./pic2.jpg";
+import Stone from "./stone.JPG";
+import Robot from "./robotic.JPG";
+import Oncology from "./oncology.JPG";
+import Infertility from "./infertility.JPG";
+import Prostate from "./prostate.JPG";
+import Kidney from "./kidney.JPG";
 
 export default function DoctorWebsite() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -40,27 +46,27 @@ export default function DoctorWebsite() {
     {
       title: "Kidney Stone Treatment",
       description: "Advanced minimally invasive procedures for kidney stone removal including PCNL, RIRS, URS and laser lithotripsy with quick recovery times.",
-      icon: "💎"
+      icon: Stone
     },
     {
       title: "Prostate Surgery",
       description: "Comprehensive prostate care including TURP, laser prostatectomy, UroLift and treatment for benign prostatic hyperplasia (BPH).",
-      icon: "🔬"
+      icon: Prostate
     },
     {
       title: "Urological Cancer Care",
       description: "Expert diagnosis and surgical treatment for kidney, adrenal, bladder, prostate, penis and testicular cancers using latest oncological techniques.",
-      icon: "🎗️"
+      icon: Oncology
     },
     {
       title: "Male Infertility",
       description: "Specialized treatment for male reproductive issues including varicocele repair, vasectomy reversal, erectile dysfunction and fertility consultations.",
-      icon: "👨‍⚕️"
+      icon: Infertility
     },
     {
-      title: "Laparoscopic Surgery",
+      title: "Robotic Surgery",
       description: "Minimally invasive laparoscopic and robotic-assisted procedures for faster recovery and minimal scarring.",
-      icon: "🏥"
+      icon: Robot
     },
     // {
     //   title: "Urinary Tract Infections",
@@ -71,7 +77,7 @@ export default function DoctorWebsite() {
     {
       title: "Renal Transplant",
       description: "Expert renal transplant services including pre-transplant evaluation, organ procurement, and post-transplant care.",
-      icon: "🩺"
+      icon: Kidney
     }
   ];
 
@@ -1230,7 +1236,9 @@ export default function DoctorWebsite() {
           <div className="services-grid">
             {services.map((service, index) => (
               <div className="service-card" key={index}>
-                <span className="service-icon">{service.icon}</span>
+                <div style={{width:service?.icon === Oncology ? "25rem" : "15rem", height:"15rem", textAlign:"center", margin:"0 auto 1.5rem"}}>
+                  <img height={"100%"} width={"100%"} src={service.icon} alt={service.title} />
+                </div>
                 <h3>{service.title}</h3>
                 <p>{service.description}</p>
                 <a href="#contact" className="service-link" onClick={(e) => { e.preventDefault(); scrollToSection('contact'); }}>
