@@ -229,11 +229,9 @@ export default function DoctorWebsite() {
           top: 0;
           right: -100%;
           width: 100%;
-          max-width: 400px;
           height: 100vh;
           background: var(--bg-white);
           box-shadow: -5px 0 30px var(--shadow);
-          padding: 2rem;
           transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1);
           z-index: 1001;
         }
@@ -1168,7 +1166,7 @@ export default function DoctorWebsite() {
           <div className="about-content">
             <div className="about-image">
               <div className="about-image-main">
-                <img src={Picture2} alt="Dr. Bipul Agarwal" />
+                <img style={{objectFit:"contain"}} src={Picture2} alt="Dr. Bipul Agarwal" />
               </div>
               <div className="about-image-badge">
                 <span className="badge-number">5K+</span>
