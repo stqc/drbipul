@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Phone, Mail, MapPin, Clock, Award, Users, Heart, Star, ChevronRight, Calendar, Facebook, Twitter, Linkedin, Instagram } from 'lucide-react';
+import Picture1 from "./pic1.jpg";
+import Picture2 from "./pic2.jpg";
 
 export default function DoctorWebsite() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -1097,6 +1099,8 @@ export default function DoctorWebsite() {
             <li><a href="#services" className={activeSection === 'services' ? 'active' : ''} onClick={(e) => { e.preventDefault(); scrollToSection('services'); }}>Services</a></li>
             <li><a href="#testimonials" className={activeSection === 'testimonials' ? 'active' : ''} onClick={(e) => { e.preventDefault(); scrollToSection('testimonials'); }}>Testimonials</a></li>
             <li><a href="#contact" className={activeSection === 'contact' ? 'active' : ''} onClick={(e) => { e.preventDefault(); scrollToSection('contact'); }}>Contact</a></li>
+            <li><a href="#contact" className={activeSection === 'Blog' ? 'active' : ''} onClick={(e) => { e.preventDefault(); scrollToSection('contact'); }}>Blog</a></li>
+
           </ul>
           <button className="menu-toggle" onClick={() => setIsMenuOpen(true)}>
             <Menu size={28} />
@@ -1144,7 +1148,7 @@ export default function DoctorWebsite() {
           </div>
           <div className="hero-image">
             <div className="hero-image-wrapper">
-              <img src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=800&h=1000&fit=crop" alt="Urologist Surgeon" />
+              <img src={Picture1} alt="Urologist Surgeon" />
               <div className="hero-stats">
                 {stats.map((stat, index) => (
                   <div className="stat-item" key={index}>
@@ -1164,7 +1168,7 @@ export default function DoctorWebsite() {
           <div className="about-content">
             <div className="about-image">
               <div className="about-image-main">
-                <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=800&h=1000&fit=crop" alt="Dr. Bipul Agarwal" />
+                <img src={Picture2} alt="Dr. Bipul Agarwal" />
               </div>
               <div className="about-image-badge">
                 <span className="badge-number">5K+</span>
@@ -1380,7 +1384,7 @@ export default function DoctorWebsite() {
           </div>
         </div>
         <div className="footer-bottom">
-          <p>&copy; 2026 Dr. Bipul Agarwal - Urologist, Renal Transplant & Robotic Surgeon. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Dr. Bipul Agarwal - Urologist, Renal Transplant & Robotic Surgeon. All rights reserved.</p>
         </div>
       </footer>
     </div>
